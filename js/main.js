@@ -6,19 +6,25 @@ $(global.window.document).ready(function(){
   
   
   var start = '/Users/barnaj/Desktop';
-  walk.getFiles(start, function(fileStats){
-    var $newFileElement = $('<div>').addClass('file').text(fileStats.name);
+  
+  var dirResults = walk.scanDir(start);
+  
+  for (file of dirResults.files){
+    var $newFileElement = $('<div>').addClass('file').text(file);
     $('.fileHolder').append($newFileElement);
-  });
+  }
   
-  var childHandle = walk.getChildDirectories(start, function(directoryStat){
-    console.log(directoryStat.name);
-    childHandle.getFiles(directoryStat, function(fileStats){
-      console.log(directoryStat.name + ": " + fileStats.name);
-    });
-  });
+  for (dir of dirResults.directories){
+    var $newChildFolder = $("<div>").addClass('child folderView').attr('id', dir).text(dir).append($("<br/>"));
+    $('#childSection').append($newChildFolder);
     
-  
+    var childDirResults = walk.scanDir(walk.join(start, dir));
+    for (file of childDirResults.files){
+      var newChildFile = $("<div>").addClass("file").text(file);
+      $('#' + dir).append(newChildFile);
+    }
+      
+  }
 });
   
   

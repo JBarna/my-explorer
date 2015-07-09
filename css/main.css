@@ -13,42 +13,23 @@
 .file{
   border: 1px solid black;
   display: inline-block;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  padding: 5px;
   cursor: pointer;
 }
 
+#currentDirectory .file{
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+#childSection .file{
+  margin: 2px;
+  padding: 2px;
+  font-size: 9px;
+}
 
 .child {
   height: 25%;
   border: 1px solid black;
-}
-
-
-/* used for the first itteration of files
-.fileOuter{
-
-  padding: 15px 5px;
-  text-align: center;
-
-}
-
-.fileInner{
-  margin: auto;
-  display: inline-block;
-  border: 1px solid black;
-}
-
-
-
-.extention{
-  background-color: lightgray;
-  width: 100%;
-  font-size: 13px;
-  display: inline-block;
-  position: relative;
-  top: 1px;
-*/
 }
 
