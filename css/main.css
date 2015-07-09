@@ -14,6 +14,7 @@
   border: 1px solid black;
   display: inline-block;
   cursor: pointer;
+  word-break:break-all;
 }
 
 #currentDirectory .file{
@@ -22,14 +23,13 @@
   padding: 5px;
 }
 
-#childSection .file{
+.folderView .file{
   margin: 2px;
   padding: 2px;
   font-size: 9px;
 }
 
-.child {
-  height: 25%;
+.folderView {
   border: 1px solid black;
 }
 
