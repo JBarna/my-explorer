@@ -10,7 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+      global.$ = $;
+      require('main.js');
+    </script>
   </head>
 
   <body>
@@ -21,6 +25,7 @@
               <span class="fa fa-file-text-o fa-2x"></span>
               <span>Documents</span>
               <div class="fileHolder pure-g">
+<!--
                 <div class="fileOuter pure-u-1-4 pure-u-sm-1-4 pure-u-md-1-12 pure-u-lg-1-24">
                   <div class="fileInner">
                     <span class="fileName">
@@ -43,6 +48,7 @@
                     </span>
                   </div>
                 </div>
+-->
               </div>
             </div>
           <div class="docSection pure-u-1">

@@ -15,10 +15,20 @@
 
 .fileInner{
   margin: auto;
-  display: inline-block;
   border: 1px solid black;
+  overflow-wrap: break-word;
 }
 
+.fileNameShell{
+  display: inline-block;
+  height: 50px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.fileName{
+  font-size: 10px;
+}
 
 .extention{
   background-color: lightgray;
