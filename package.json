@@ -1,7 +1,7 @@
 {
   "name": "FileExplorer",
   "description": "Simple file explorer.",
-  "version": "0.1",
+  "version": "0.0.1",
   "main": "index.html",
   "window": {
     "toolbar": true,
@@ -9,6 +9,7 @@
     "height": 500
   },
   "dependencies": {
+    "chokidar": "^1.0.3",
     "walk": "*"
   }
 }
