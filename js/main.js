@@ -6,7 +6,7 @@ var path = require('path');
 
 $(global.window.document).ready(function(){
   
-  var start = '/Users/barnaj/Desktop';
+  var start = path.resolve('C:/Users/JBarna/Desktop');
   var walk = walker(start); 
   
   //scan current directory
