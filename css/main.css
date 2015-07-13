@@ -32,5 +32,6 @@
 .folderView {
   border: 1px solid black;
   word-break: break-all;
+  margin-bottom: 10px;
 }
 
